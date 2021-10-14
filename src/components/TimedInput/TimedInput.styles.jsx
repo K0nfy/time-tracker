@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Button } from '../PlayButton/PlayButton.styles';
 
 export const StyledTimedInput = styled.form`
-  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -19,8 +18,9 @@ export const Span = styled.span`
 `;
 
 export const Input = styled.input`
-  flex-basis: 80%;
+  flex-basis: 85%;
   padding: 0 0 0 10px;
+  box-sizing: border-box;
 `;
 
 export const PlayButtonContainer = styled.div`
