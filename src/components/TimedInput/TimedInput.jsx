@@ -5,6 +5,8 @@ import {
   PlayButtonContainer, StyledPlayButton
 } from './TimedInput.styles';
 
+import Stopwatch from '../Stopwatch/Stopwatch';
+
 export default function TimedInput({ handleInput }) {
   const [titleText, setTitleText] = useState('');
   const [isInCountMode, setIsInCountMode] = useState(false);
@@ -31,12 +33,9 @@ export default function TimedInput({ handleInput }) {
 
   return (
     <StyledTimedInput onSubmit={handleSubmit}>
+      <div>{isInCountMode ? 'ಠ⁠_⁠ಠ' : '(⁠ ⁠´⁠ ⁠ｰ⁠ ⁠`⁠)'}</div>
       <Span>
-        {
-          isInCountMode ?
-          'Здесь должен был быть отсчёт времени ⁠ಠ⁠_⁠ಠ' :
-          'Здесь должен был быть отсчёт времени (⁠ ⁠´⁠ ⁠ｰ⁠ ⁠`⁠)'
-        }
+        {isInCountMode ? <Stopwatch isRunning/> : <Stopwatch/>}
       </Span>
       <Input
         placeholder="Чем ты будешь заниматься сейчас?"
