@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## About
 
-Time tracker с возможностью добавления заметок. Демо [должно быть тут](https://k0nfy.github.io/create-react-app/)
+Time tracker с возможностью добавления заметок. Демо [должно быть тут](https://k0nfy.github.io/time-tracker/)
 
 ## To do
 
